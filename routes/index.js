@@ -6,8 +6,6 @@ router.get('/', async (ctx, next) => {
     title: 'Hello Koa 2!'
   })
 })
-console.log(indexModule)
-
 router.get('/string', indexModule.hello)
 
 router.get('/json', indexModule.database)
